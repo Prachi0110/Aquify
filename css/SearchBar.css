@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+.container{
+    width:100%;
+    /* min-height: 100vh; */
+    margin-top: 2px;
+    padding:5%; 
+      
+
+    /* display: flex; 
+    align-items: center;
+    justify-content: center;*/
+    /* border: 1% solid black;  */
+    
+}
+.searchBar{
+    width:100%;
+    max-width: 700px;
+    background: rgba(255 , 255 ,255, 0.2);
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    height: 60px;
+    margin-top: 0;
+
+}
+ #myInput{
+    border: none;
+    background: transparent; 
+    flex: 1; 
+    outline: none;
+    padding: 10px 10px;
+    font-size : 10px;
+    color: black;
+    margin: 0%;
+
+}
+::placeholder {
+color:rgba(0, 0, 0, 0.564);
+font-size: 13px;
+}
+#searchButton img{
+    width: 35%;
+    opacity: 3;
+
+
+}
+#searchButton{
+    margin-left: 70%;
+    border:0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background:rgba(8, 54, 163, 0.884);
+}
+.activeSearch{
+    display:none;
+    opacity:0;
+}
+#searchList{
+
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    position:absolute;
+    top:60%;
+    left: 25%;
+    width:50%;
+    padding-top: 1%;
+    padding-left: 0.5%;
+    border:1px solid black;
+    border-radius:1%;
+    
+}
+#myUl li{
+    /* margin:1%; */
+    border-bottom: 1px solid grey;
+    height:2%;
+}
+#myUl li a{
+    text-decoration: none;
+    color: black;
+    
+} 

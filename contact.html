@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquify</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/SearchBar.css">
+    <link rel="stylesheet" href="css/contactstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="logo">
+                <img src="images/logo3.png" alt="">
+                
+                <button id="loginbtn"><a href="loginpage.html">Log in</a></button>
+            </div>
+            
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Issue</a>
+                    <div class="dropdown-content">
+                      <a href="#">Water</a>
+                      <a href="#">Waste</a>
+                    </div>
+                </li>                  
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Solutions</a>
+                    <div class="dropdown-content">
+                      <a href="Solutions.html">Water</a>
+                      <a href="Solutions_hygiene.html">Waste</a>
+                    </div>
+                  </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">About</a>
+                    <div class="dropdown-content">
+                      <a href="what we do.html">What we do</a>
+                      <a href="who we are.html">Who we are</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Contact</a>
+                    <div class="dropdown-content">
+                      <a href="contact.html">Contact with Us</a>
+                      <a href="contact.html">Contact with NGO</a>
+                    </div>
+                </li>
+                <div class="icons">
+                <a href=""><i class="fa fa-facebook"></a></i>
+                <a href="#"><i class="fa fa-instagram"></a></i>
+                <a href="#"><i class="fa fa-twitter"></a></i>
+                </div>
+            </ul>
+        </div>
+            <section class="index">
+                <div id="contactpage">
+   
+
+                    <!------- contact us----->
+               <div class="bodyc">
+                  <div class="contain">
+                   <h1 style="color:rgb(43, 39, 39);text-align: center;font-size: 40px;">
+                       Contact With Us
+                   </h1>
+                   <div class="contact-box">
+                       <div class="contact-left">
+                           <h3>
+                               Sent Your Request
+                           </h3>
+                           <form  onsubmit="sendemail(); reset(); return false ">
+                               <div class="inputrow">
+                                   <div class="inputgroup">
+                                       <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Name</label>
+                                       <input name="name" id="name" type="text" placeholder="Your name..">
+       
+                                   </div>
+                                   <div class="inputgroup">
+                                       <label for="phone" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Phone</label>
+                                       <input id="phone" name="phone" type="text" placeholder="Phone number...">
+       
+                                   </div>
+                               </div>
+                               <div class="inputrow">
+                                   <div class="inputgroup">
+                                       <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email</label>
+                                       <input id="email" name="email" type="text" placeholder="Your email">
+       
+                                   </div>
+                                   <div class="inputgroup">
+                                       <label for="location" class="block mb-2 text-sm text-gray-600 dark:text-gray-400" >Subject</label>
+                                       <input name="location" id="location" type="text" placeholder="Location">
+       
+                                   </div>
+                               </div>
+       
+                               <label  for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400"> Message</label>
+                               <textarea  name="message" id="message" rows="5" placeholder="Problem/Query"></textarea>
+                               <button id="buttonsubmit" class="button-33"> Send</button>
+       
+                                 <p class="text-base text-center text-gray-400" id="result"></p>
+                           </form>
+                       </div>
+                    <div class="contact-right">
+                           <h3>Reach US </h3>
+                       <div class="inputrow">
+                       <table>
+                           <tr>
+                               <td>Email</td>
+                               <td>info@aquify.com</td>
+                           </tr>
+                           <tr>
+                               <td>Phone </td>
+                               <td>+91 8607227118</td>
+                           </tr>
+                           <tr>
+                               <td>Address &nbsp;&nbsp; </td>
+                               <td>Devnanagri, 
+                                   <BR>Mitthapur-Sambhalkha Road
+                                   <br> Ambala, haryana, india
+                                   <BR>133101
+                               </td>
+                           </tr>
+                       </table>
+                   </div>
+                  </div> 
+               </div>
+                   
+        </div>  
+     </div>
+</section>
+<footer>
+    <div class="col-1">
+         <h2>Useful Links</h2>
+         <a href="#">home</a>
+         <a href="#">Issues</a>
+         <a href="#">Solution</a>
+         <a href="#">About Us</a>
+         <a href="loginpage.html">Login</a>
+    </div>
+    <div class="col-2">
+        <div class="content">
+        <h2>Send Query</h2>
+        <form>
+            <input type="email" placeholder="Your email...." required>
+            <br>
+            <input type="text" placeholder="Type you Query..."required><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+    <div class="col-3">
+        <h2>Contact</h2>
+        <p>123,xyz road,bsl 3<br>Mohali,Haryana<br>INDIA</p><br>
+        <div class="social-icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
